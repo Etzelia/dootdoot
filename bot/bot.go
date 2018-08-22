@@ -23,7 +23,8 @@ var channelScreenShots = "241404784425435148"
 var channelTechTalk = "326561998227767299"
 var channelSpawn = "343904691480166403"
 var channelNether = "236466997158871040"
-var channelgood_boy_points = "402105717932294144"
+var channelGoodBoyPoints = "402105717932294144"
+
 
 var guild24CarrotCraft = "195174072634572800"
 
@@ -241,7 +242,7 @@ func gradHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 						if error != nil {
 
-							s.ChannelMessageSend(channelgood_boy_points, "Invalid amount")
+							s.ChannelMessageSend(channelGoodBoyPoints, "Invalid amount")
 
 						} else {
 
@@ -319,7 +320,7 @@ func expHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 					uid := strconv.Itoa(userID)
 
 					println("Created user " + uid)
-					s.ChannelMessageSend(channelgood_boy_points, "Your good boy points are 0!")
+					s.ChannelMessageSend(channelGoodBoyPoints, "Your good boy points are 0!")
 
 				} else {
 
